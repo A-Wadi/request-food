@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+body {
+  background-color: #212129;
+  font-size: 16px;
+  background: linear-gradient(145deg, #00000023, #00000023, #00000023), url('https://images.unsplash.com/photo-1458253756247-1e4ed949191b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGFyayUyMGZvb2QlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHw%3D&w=1000&q=80');
+  background-size: cover;
+  height: 100vh;
+}
+
+* {
+  direction: rtl;
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  background: #ffffff4d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  height: 100px;
+}
+
+nav h1 {
+  font-size: 2.1em;
+}
+
+.container {
+  padding: 15px;
+  display: flex;
+  height: calc(100vh - 100px);
+}
+
+.listFood {
+  height: 100%;
+  overflow: auto;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  align-items: flex-start;
+}
+
+.listFood .box {
+  background-color: rgba(112, 112, 112, 0.274);
+  flex: 0 0 calc(calc(100% / 3) - 16px);
+  margin: 10px 8px;
+  padding: 8px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.6);
+}
+
+.listFood .box>div {
+  display: flex;
+  align-items: center;
+}
+
+.listFood img {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-left: 15px;
+  height: 138px;
+  object-fit: cover;
+}
+
+.listFood .nameFood {
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1;
+  color: #FFF;
+}
+
+.listFood .priceFood {
+  font-size: 1em;
+  margin: 12px 0;
+  line-height: 1;
+  display: block;
+  color: #d3d3d3;
+}
+
+.listFood .priceFood b {
+  margin-right: 15px;
+  font-size: 1.125rem;
+  color: #FFF;
+}
+
+.listFood .request span {
+  display: inline-block;
+  width: 33.3333%;
+  border: 1px solid #FFF;
+  text-align: center;
+  font-size: 0.925rem;
+  color: #d3d3d3;
+  cursor: pointer;
+  user-select: none;
+}
+
+.listFood .request span.num {
+  color: #FFF;
+  cursor: text;
+}
+
+.listFood .request span:first-child {
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -ms-border-radius: 0 5px 5px 0;
+  -o-border-radius: 0 5px 5px 0;
+}
+
+.listFood .request span:last-child {
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  -ms-border-radius: 5px 0 0 5px;
+  -o-border-radius: 5px 0 0 5px;
+}
+
+.listFood button,
+.requestMe button {
+  margin-top: 12px;
+  width: 100%;
+  background-color: #179e2d;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 1px solid #ffffff;
+  color: #FFF;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.requestMe {
+  width: 25%;
+  color: #FFF;
+  padding: 0 15px;
+}
+
+.requestMe table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(112, 112, 112, 0.274);
+  margin-top: 15px;
+}
+
+.requestMe tr td {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #d3d3d3;
+}
+
+.requestMe tr td b {
+  margin-right: 10px;
+}
+
+.requestMe button {
+  margin-top: 15px;
+  padding: 8px;
+}
+
+.not-allowed {
+  cursor: not-allowed !important;
+  opacity: 0.5;
+}
